@@ -1,5 +1,7 @@
 # 🖼️ AWS Serverless AI Image Editing Application
 
+<img width="2752" height="1536" alt="Professional AWS Architecture Diagram" src="https://github.com/user-attachments/assets/ad0ed80c-68c6-4725-a5ba-4cc5af2508f0" />
+
 ### 📌 Project Level: Intermediate
 A hands-on AWS serverless application demonstrating how to build a secure, scalable, AI-powered image editing solution using Amazon Bedrock and fully managed AWS services.
 
