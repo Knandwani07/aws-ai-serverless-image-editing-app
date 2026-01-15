@@ -1,6 +1,6 @@
 # 💻 Code Reference
 
-This directory contains the source code for the **AWS Serverless AI Image Editing Application using Amazon Bedrock**.
+This directory contains the source code for the AWS Serverless AI Image Editing Application using Amazon Bedrock.
 
 The codebase is divided into backend and frontend components. The backend is implemented as an AWS Lambda function that integrates with Amazon Bedrock and DynamoDB, while the frontend is a browser-based application that handles user authentication, image masking, and API interactions.
 
@@ -8,7 +8,7 @@ The codebase is divided into backend and frontend components. The backend is imp
 
 ## 📄 Backend Code Overview
 
-### 📂 `lambda_function.py`
+### `📂lambda_function.py`
 
 This file contains the AWS Lambda function responsible for handling authenticated image editing requests and invoking Amazon Bedrock for AI-powered image generation.
 
@@ -29,7 +29,7 @@ This file contains the AWS Lambda function responsible for handling authenticate
 - Log all execution details to Amazon CloudWatch.
 
 **📌 Notes:**
-- The function uses the `amazon.titan-image-generator-v2` model.
+- The function uses the amazon.titan-image-generator-v2 model.
 - DynamoDB table name is configurable via environment variables.
 - Implements CORS headers for browser-based access.
 - Designed to run statelessly in a serverless environment.
@@ -42,7 +42,7 @@ The frontend is a static web application hosted using AWS Amplify. It provides t
 
 ---
 
-### 📂 `index.html`
+### `📂 index.html`
 
 Defines the structure of the web application.
 
@@ -65,7 +65,7 @@ Handles application styling.
 
 ---
 
-### 📂 `config.js`
+### `📂 config.js`
 
 Stores environment-specific configuration.
 
@@ -77,7 +77,7 @@ Stores environment-specific configuration.
 
 ---
 
-### 📂 `cognito-authentication.js`
+### `📂 cognito-authentication.js`
 
 Manages Amazon Cognito authentication logic.
 
@@ -89,7 +89,7 @@ Manages Amazon Cognito authentication logic.
 
 ---
 
-### 📂 `api.js`
+### `📂 api.js`
 
 Handles API communication with the backend.
 
@@ -101,7 +101,7 @@ Handles API communication with the backend.
 
 ---
 
-### 📂 `global.js`
+### `📂 global.js`
 
 Contains shared global variables and utility functions.
 
@@ -113,7 +113,7 @@ Contains shared global variables and utility functions.
 
 ---
 
-### 📂 `image-manipulation.js`
+### `📂 image-manipulation.js`
 
 Implements image masking and canvas interaction logic.
 
@@ -140,9 +140,9 @@ Acts as the main application controller.
 
 ---
 
-## 📂 Image Assets Directory
+## `📂 Image Assets Directory`
 
-### 📂 `images/` (Separate Folder)
+### `📂 images/ (Separate Folder)`
 
 This directory contains sample images used for testing and demonstration purposes.
 
@@ -157,7 +157,7 @@ This directory contains sample images used for testing and demonstration purpose
 ## 🧪 Usage Notes
 
 - The Lambda function must be deployed behind API Gateway with a Cognito authorizer.
-- Frontend configuration values in `config.js` must match deployed AWS resources.
+- Frontend configuration values in config.js must match deployed AWS resources.
 - IAM permissions are required for:
   - Bedrock model invocation
   - DynamoDB write access
@@ -170,6 +170,6 @@ This directory contains sample images used for testing and demonstration purpose
 ## 📚 Related Documentation
 
 For additional context, refer to:
-- `execution-guide.md`
-- `workflow.md`
-- Root `README.md`
+- execution-guide.md
+- workflow.md
+- Root README.md
