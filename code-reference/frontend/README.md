@@ -1,4 +1,4 @@
-# 🎨✨ Frontend – Web Application
+#  ✨ Frontend – Application UI
 
 This directory contains the frontend source code for the AWS Serverless AI Image Editing Application. The frontend is responsible for user interaction, authentication, image masking, prompt submission, and displaying AI-generated results.
 
